@@ -1,5 +1,7 @@
 package com.example.Selenium;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +18,7 @@ public class TC001_LoginPage {
 	public static WebDriver driver;
 	
 	@Test
-	public void logintest() throws InterruptedException {
+	public void logintest() {
 		
 		
 //		driver2 = new RemoteWebDriver();
@@ -25,7 +27,10 @@ public class TC001_LoginPage {
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		System.out.println("Launch OrangeHRM System");
 		
-		Thread.sleep(8000);
+		
+//		Thread.sleep(8000);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		System.out.println("Enter Username");
 		
 		WebElement username=driver.findElement(By.xpath("//input[@name='username']")); 
@@ -35,8 +40,13 @@ public class TC001_LoginPage {
 		WebElement password=driver.findElement(By.xpath("//input[@name='password']")); 
 		password.clear();
 		password.sendKeys(pwd);
-		WebElement Login = driver.findElement(By.xpath("//button[@type='submit']"));
-		Login.click();
+		WebElement login = driver.findElement(By.xpath("//button[@type='submit']"));
+		login.click();
+		
+//		WebElement profile = driver.findElement(By.xpath("//button[@type='submit']"));
+//		profile.click();
+		
+		
 		String title=driver.getTitle();
 		System.out.println(title);
 		Assert.assertEquals(title, "OrangeHRM");
@@ -44,8 +54,5 @@ public class TC001_LoginPage {
 		
 		
 	}
-	
-	
-	
 	
 }

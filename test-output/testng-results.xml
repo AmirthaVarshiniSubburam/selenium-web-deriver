@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-03T14:35:13 IST" name="Default suite" finished-at="2022-11-03T14:35:35 IST" duration-ms="21633">
+  <suite started-at="2022-11-03T15:47:50 IST" name="Default suite" finished-at="2022-11-03T15:48:00 IST" duration-ms="9922">
     <groups>
     </groups>
-    <test started-at="2022-11-03T14:35:13 IST" name="Default test" finished-at="2022-11-03T14:35:35 IST" duration-ms="21633">
-      <class name="com.example.Selenium.TC001_LoginPage">
-        <test-method signature="logintest()[pri:0, instance:com.example.Selenium.TC001_LoginPage@574b560f]" started-at="2022-11-03T14:35:13 IST" name="logintest" finished-at="2022-11-03T14:35:35 IST" duration-ms="21576" status="PASS">
+    <test started-at="2022-11-03T15:47:50 IST" name="Default test" finished-at="2022-11-03T15:48:00 IST" duration-ms="9922">
+      <class name="com.example.Selenium.PetStoreTest">
+        <test-method signature="petStoreTest()[pri:0, instance:com.example.Selenium.PetStoreTest@59af0466]" started-at="2022-11-03T15:47:50 IST" name="petStoreTest" finished-at="2022-11-03T15:48:00 IST" duration-ms="9819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-      </class> <!-- com.example.Selenium.TC001_LoginPage -->
+        </test-method> <!-- petStoreTest -->
+      </class> <!-- com.example.Selenium.PetStoreTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
