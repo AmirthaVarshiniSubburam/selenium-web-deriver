@@ -43,11 +43,11 @@ public class PetStoreTest {
 	String goldFishPrice = price.getText();
 	
 	WebElement goldFishType = driver.findElement(By.cssSelector("td:nth-child(3)"));
-//	WebElement goldFishType = driver.findElement(By.cssSelector("css=td:nth-child(3)"));
+	WebElement goldFishInStock = driver.findElement(By.cssSelector("td:nth-child(4)"));
 	
 	Assert.assertEquals(goldFishPrice, "$5.50");
 	Assert.assertEquals(goldFishType.getText(), "Adult Male Goldfish");
-	
+	Assert.assertEquals(goldFishInStock.getText(), "true");
 	
 	driver.close();
 	
