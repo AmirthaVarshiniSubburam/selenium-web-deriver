@@ -24,8 +24,8 @@ public static WebDriver driver;
 	
 	//Waiting to load
 	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	System.out.println("Url Launched after 10 seconds");
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//	System.out.println("Url Launched after 10 seconds");
 	
 	WebElement createNewAcc = driver.findElement(By.xpath("//form/div[5]/a"));
 	createNewAcc.click();

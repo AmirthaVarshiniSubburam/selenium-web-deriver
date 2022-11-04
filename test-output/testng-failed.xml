@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.example.Selenium.SelectFacebookExample">
+      <class name="com.example.Selenium.GoogleSearchLoop">
         <methods>
-          <include name="fbSelect"/>
+          <include name="navigateToGoogle"/>
         </methods>
-      </class> <!-- com.example.Selenium.SelectFacebookExample -->
+      </class> <!-- com.example.Selenium.GoogleSearchLoop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
