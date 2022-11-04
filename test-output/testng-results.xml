@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-04T11:59:58 IST" name="Default suite" finished-at="2022-11-04T12:00:23 IST" duration-ms="25428">
+  <suite started-at="2022-11-04T12:25:45 IST" name="Default suite" finished-at="2022-11-04T12:25:56 IST" duration-ms="10721">
     <groups>
     </groups>
-    <test started-at="2022-11-04T11:59:58 IST" name="Default test" finished-at="2022-11-04T12:00:23 IST" duration-ms="25428">
-      <class name="com.example.Selenium.MyStoreTest">
-        <test-method signature="myStoreTest()[pri:0, instance:com.example.Selenium.MyStoreTest@3e6ef8ad]" started-at="2022-11-04T11:59:58 IST" name="myStoreTest" finished-at="2022-11-04T12:00:23 IST" duration-ms="25371" status="PASS">
+    <test started-at="2022-11-04T12:25:45 IST" name="Default test" finished-at="2022-11-04T12:25:56 IST" duration-ms="10721">
+      <class name="com.example.Selenium.SelectFacebookExample">
+        <test-method signature="fbSelect()[pri:0, instance:com.example.Selenium.SelectFacebookExample@3e6ef8ad]" started-at="2022-11-04T12:25:45 IST" name="fbSelect" finished-at="2022-11-04T12:25:56 IST" duration-ms="10652" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myStoreTest -->
-      </class> <!-- com.example.Selenium.MyStoreTest -->
+        </test-method> <!-- fbSelect -->
+      </class> <!-- com.example.Selenium.SelectFacebookExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
