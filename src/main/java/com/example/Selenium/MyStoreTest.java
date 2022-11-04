@@ -15,7 +15,7 @@ public class MyStoreTest {
 	public static WebDriver driver;
 	
 	@Test
-	public void myStoreTest() {
+	public void myStoreTest(){
 		
 	System.setProperty("webdriver.edge.driver", "D:\\SERP\\Testing\\edgedriver_win32\\msedgedriver.exe");
 	driver=new EdgeDriver();
@@ -42,9 +42,12 @@ public class MyStoreTest {
 		
 		System.out.println("Contact page lauched successfully ");
 		WebElement drpDown = driver.findElement(By.id("id_contact"));
+		
 		Select drpDownType = new Select(drpDown);
 		drpDownType.selectByVisibleText("Customer service");
 		System.out.println("dropdown selected successfully ");
+		
+		
 		driver.close();
 		System.out.println("Test passed - Driver Closed");
 		}

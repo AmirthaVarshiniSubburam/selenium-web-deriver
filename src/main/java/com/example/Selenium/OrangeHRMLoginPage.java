@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC001_LoginPage {
+public class OrangeHRMLoginPage {
 	//Passing Login Credentials
 	public String uname = "Admin";
 	public String pwd = "admin123";

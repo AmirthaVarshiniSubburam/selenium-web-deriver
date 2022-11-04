@@ -23,9 +23,9 @@ public class BingTest {
 	@Test
 	public void navigateToBing() {
 		
-		String[] arr = new String[2];
-		arr[0] = new String("XPath");
-		arr[1] = new String("CSS Selector");
+//		String[] arr = new String[2];
+//		arr[0] = new String("XPath");
+//		arr[1] = new String("CSS Selector");
 //		arr[2] = new String("name");
 //		arr[3] = new String("ID");
 //		arr[4] = new String("Tag name");
@@ -33,7 +33,7 @@ public class BingTest {
 //		arr[6] = new String("Partial Link-Text");
 //		arr[7] = new String("By CSS");
 		
-		for (String string : arr) {
+//		for (String string : arr) {
 			
 		
 		
@@ -56,7 +56,7 @@ public class BingTest {
 		driver.close();
 		System.out.println("Edge Browser Close");
 		
-		}
+//		}
 	}
 	
 	
