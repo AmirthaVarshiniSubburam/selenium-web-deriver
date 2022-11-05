@@ -20,12 +20,18 @@ public class SpringHTest {
 			
 		System.setProperty("webdriver.edge.driver", "D:\\SERP\\Testing\\edgedriver_win32\\msedgedriver.exe");
 		driver=new EdgeDriver();
-		driver.get("http://localhost:3000/login");
+		driver.get("http://localhost:3000");
 		System.out.println("Launch Wallet Pay");
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
+		WebElement HLoginButton = driver.findElement(By.xpath("//nav/div/div/div[2]/button[1]"));
+		HLoginButton.click();
+		
+		String Loginpageurl = driver.getCurrentUrl();
+		
+		String actualLoginpageUrl = "http://localhost:3000/login";
 		
 		WebElement userName = driver.findElement(By.xpath("//input[@id='floatingInput']"));
 //		searchBox.click();
@@ -43,7 +49,7 @@ public class SpringHTest {
 		WebElement ProfilePageEmail = driver.findElement(By.xpath("//div[2]/span"));
 		
 		Assert.assertEquals(ProfilePageEmail.getText(), "Signed in as: amutheswaran@gmail.com");
-		
+		Assert.assertEquals(Loginpageurl, actualLoginpageUrl);
 		driver.close();
 		
 		}
