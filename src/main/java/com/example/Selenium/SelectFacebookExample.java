@@ -47,10 +47,7 @@ public static WebDriver driver;
 	submitButton.click();
 	
 	driver.close();
-	
-	
-	
-	
+			
 	}
 	
 	
